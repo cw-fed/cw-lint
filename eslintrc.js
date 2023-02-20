@@ -9,6 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:promise/recommended",
+    "prettier",
   ],
   globals: {
     Atomics: "readonly",
@@ -18,7 +19,8 @@ module.exports = {
   plugins: [
     "import",
     "@typescript-eslint",
-    "react-hooks"
+    "react-hooks",
+    "prettier",
   ],
   rules: {
     /**
