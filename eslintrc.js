@@ -9,23 +9,13 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:promise/recommended",
-
-    // 关闭eslint配置中与prettier冲突的格式化规则
-    "prettier",
   ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
   },
   parser: "@typescript-eslint/parser",
-  // parserOptions: { // 关联tsconfig文件，但lint时间明显增加，不建议关联
-  //   ecmaFeatures: {
-  //     jsx: true
-  //   },
-  //   project: "./tsconfig.json",
-  // },
   plugins: [
-    "prettier",
     "import",
     "@typescript-eslint",
     "react-hooks"
@@ -39,7 +29,7 @@ module.exports = {
      */
 
     // ============命名=============
-    "camelcase": "on",
+    "camelcase": "error",
     "@typescript-eslint/naming-convention": [
       2,
       {
@@ -87,7 +77,7 @@ module.exports = {
     "space-infix-ops": 2, // 要求中缀操作符周围有空格
     "comma-spacing": [2, {"after": true}], // 强制在逗号前后使用一致的空格
     "no-trailing-spaces": 2, // 禁用行尾空格
-    "space-before-function-paren":[2, "always"], // 要求或禁止函数圆括号之前有一个空格
+    "space-before-function-paren":[2, "never"], // 要求或禁止函数圆括号之前有一个空格
     "no-multi-spaces": 2, // 禁止使用多个空格
     "object-curly-spacing": [2, "always"], // 对象大括号旁必须有空格
     "@typescript-eslint/type-annotation-spacing": [2, { // 声明类型时必须无空格

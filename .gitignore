@@ -1,2 +1,15 @@
+# 编辑器配置
+.vscode
+
+# git配置
 .git
+
+# node依赖
+node_modules/
+
+# 锁版本
 package-lock.json
+yarn.lock
+
+# 缓存
+.eslintcache
