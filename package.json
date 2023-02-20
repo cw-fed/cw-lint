@@ -1,5 +1,5 @@
 {
-  "name": "@cw-fed/cw-lint",
+  "name": "@cw/cw-lint",
   "version": "1.0.0",
   "description": "intergrate lint configs",
   "scripts": {
