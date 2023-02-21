@@ -44,8 +44,9 @@
     "typescript": "^4.5.4"
   },
   "devDependencies": {
-    "np": "^7.6.3",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "fast-glob": "^3.2.12",
+    "np": "^7.6.3"
   },
   "author": "weishijiestein@outlook.com",
   "license": "ISC"

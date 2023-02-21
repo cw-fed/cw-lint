@@ -1,10 +1,19 @@
 import eslintTsConfig from "./eslintTsConfig";
 import * as fs from "fs";
 import * as path from "path";
+// import * as fg from 'fast-glob'
+
+const isJSMoreThanTS = async (path = 'src') => {
+  const fg = require('fast-glob')
+  const jsFiles = await fg(path + 'src/**/*.{js,jsx}', { deep: 3 })
+  const tsFiles = await fg(path + 'src/**/*.{ts,tsx}', { deep: 3 })
+  console.log('length', jsFiles.length, tsFiles.length)
+  return jsFiles.length > tsFiles.length
+}
 
 const isTSProject = fs.existsSync(
   path.join(process.cwd() || ".", "tsconfig.json")
-);
+) || isJSMoreThanTS();
 
 const parserOptions = {
   ecmaFeatures: {
