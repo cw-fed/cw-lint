@@ -1,6 +1,6 @@
 {
   "name": "@cw/cw-lint",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "collection of configuration files containing prettier, eslinlt, stylelint",
   "keywords": [
     "eslint",
@@ -16,7 +16,7 @@
     "test": "npm run test:js && npm run test:ts",
     "test:js": "cd demos/js-demo && npm run lint",
     "test:ts": "cd demos/ts-demo && npm run lint",
-    "prepublishOnly": "npm run build && npm run test && np --no-cleanup --yolo --any-branch"
+    "prepublishOnly": "npm run build && npm run test && np --no-cleanup --yolo --no-publish --any-branch"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
