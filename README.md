@@ -1,6 +1,6 @@
 # cw-lint
 
-整合公司lint配置。包括：
+整合公司 lint 配置。包括：
 
 - eslint.js
 - tslint.js

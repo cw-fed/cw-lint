@@ -12,9 +12,10 @@
   "scripts": {
     "build": "tsc --build tsconfig.json && npm run copy-files",
     "copy-files": "copyfiles -u 1 src/.prettierignore ./dist/",
+    "prettier": "prettier -c --write '**/*'",
     "test": "npm run test:js && npm run test:ts",
-    "test:js": "cd demos/react-demo && npm run lint",
-    "test:ts": "cd demos/react-ts-demo && npm run lint",
+    "test:js": "cd demos/js-demo && npm run lint",
+    "test:ts": "cd demos/ts-demo && npm run lint",
     "prepublishOnly": "npm run build && npm run test && np --no-cleanup --yolo --no-publish --any-branch"
   },
   "dependencies": {
