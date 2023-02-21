@@ -1,7 +1,7 @@
 {
   "name": "@cw/cw-lint",
   "version": "1.0.5",
-  "description": "collection of configuration files containing prettier, eslinlt, stylelint",
+  "description": "一个整合prettier, eslinlt, stylelint配置的仓库",
   "keywords": [
     "eslint",
     "prettier",
