@@ -1,0 +1,11 @@
+/test/
+/dist/
+/build/
+
+node_modules
+
+*.js
+*.png
+*.eot
+*.ttf
+*.woff

@@ -13,3 +13,7 @@ yarn.lock
 
 # 缓存
 .eslintcache
+
+# 
+/dist/
+/build/
