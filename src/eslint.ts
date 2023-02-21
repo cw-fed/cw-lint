@@ -1,13 +1,11 @@
 import eslintTsConfig from "./eslintTsConfig";
 import * as fs from "fs";
 import * as path from "path";
-// import * as fg from 'fast-glob'
+import * as fg from 'fast-glob'
 
 const isJSMoreThanTS = async (path = 'src') => {
-  const fg = require('fast-glob')
-  const jsFiles = await fg(path + 'src/**/*.{js,jsx}', { deep: 3 })
-  const tsFiles = await fg(path + 'src/**/*.{ts,tsx}', { deep: 3 })
-  console.log('length', jsFiles.length, tsFiles.length)
+  const jsFiles = await fg(path + '**/*.{js,jsx}', { deep: 3 })
+  const tsFiles = await fg(path + '**/*.{ts,tsx}', { deep: 3 })
   return jsFiles.length > tsFiles.length
 }
 
