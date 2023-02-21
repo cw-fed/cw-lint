@@ -1,6 +1,6 @@
 {
   "name": "@cw/cw-lint",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "一个整合prettier, eslinlt, stylelint配置的仓库",
   "keywords": [
     "eslint",
