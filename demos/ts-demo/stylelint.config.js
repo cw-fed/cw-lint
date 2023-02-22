@@ -1,1 +1,1 @@
-module.exports = require.resolve('../../dist/stylelint')
+module.exports = { ...require('../../dist/stylelint') };

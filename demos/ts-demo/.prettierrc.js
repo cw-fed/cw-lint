@@ -1,1 +1,1 @@
-module.exports = require.resolve('../../dist/prettier')
+module.exports = { ...require('../../dist/prettier') };

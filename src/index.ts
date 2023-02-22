@@ -1,3 +1,9 @@
-export * as eslint from "./eslint";
-export * as prettier from "./prettier";
-export * as stylelint from "./stylelint";
+const eslint = require('./eslint')
+const prettier = require('./prettier')
+const stylelint = require('./stylelint')
+
+module.exports = {
+    eslint,
+    prettier,
+    stylelint,
+}

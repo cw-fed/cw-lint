@@ -1,1 +1,3 @@
-module.exports = require.resolve('../../dist/prettier')
+const path = require('path');
+
+module.exports = { ...require(path.join(__dirname, '../../dist')).prettier };
