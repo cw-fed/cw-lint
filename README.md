@@ -23,4 +23,3 @@ module.exports = require.resolve('@cw/cw-lint/dist/stylelint')
 ```js
 module.exports = require.resolve('@cw/cw-lint/dist/prettier')
 ```
-

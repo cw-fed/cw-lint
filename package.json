@@ -2,13 +2,24 @@
   "name": "@cw/cw-lint",
   "version": "1.0.8",
   "description": "一个整合prettier, eslinlt, stylelint配置的仓库",
+  "homepage": "https://github.com/cw-fed/cw-lint#readme",
+  "bugs": {
+    "url": "https://github.com/cw-fed/cw-lint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cw-fed/cw-lint"
+  },
   "keywords": [
     "eslint",
     "prettier",
     "stylelint",
-    "cw"
+    "cw-fed"
   ],
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc --build tsconfig.json && npm run copy-files",
     "copy-files": "copyfiles -u 1 src/.prettierignore ./dist/",
