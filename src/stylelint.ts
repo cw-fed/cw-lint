@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ["stylelint-config-standard", "stylelint-config-prettier", "stylelint-config-standard-scss"],
-  plugins: ["stylelint-scss"],
+  extends: ["stylelint-config-standard", "stylelint-config-prettier", 'stylelint-config-css-modules'],
+  plugins: ["stylelint-declaration-block-no-ignored-properties"],
   rules: {
     indentation: 2,
     "declaration-colon-space-after": "always",
@@ -28,12 +28,6 @@ module.exports = {
     "selector-pseudo-element-colon-notation": "double",
     "selector-type-case": "lower",
     "no-descending-specificity": null,
-    "scss/at-rule-no-unknown": [
-      true,
-      {
-        ignoreAtRules: ["/^my-/"],
-      },
-    ],
     "selector-pseudo-class-no-unknown": [
       true,
       {
@@ -41,4 +35,5 @@ module.exports = {
       },
     ],
   },
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx']
 };
