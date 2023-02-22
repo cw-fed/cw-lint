@@ -1,6 +1,6 @@
 {
   "name": "@cw/cw-lint",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "一个整合prettier, eslinlt, stylelint配置的仓库",
   "homepage": "https://github.com/cw-fed/cw-lint#readme",
   "bugs": {
