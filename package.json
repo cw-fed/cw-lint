@@ -13,8 +13,7 @@
   "keywords": [
     "eslint",
     "prettier",
-    "stylelint",
-    "cw-fed"
+    "stylelint"
   ],
   "main": "dist/index.js",
   "files": [
@@ -62,5 +61,7 @@
     "np": "^7.6.3"
   },
   "author": "weishijiestein@outlook.com",
-  "license": "ISC"
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }
