@@ -10,6 +10,7 @@ node_modules/
 # 锁版本
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 
 # 缓存
 .eslintcache
