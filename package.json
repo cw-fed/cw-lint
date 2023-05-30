@@ -13,8 +13,7 @@
   "keywords": [
     "eslint",
     "prettier",
-    "stylelint",
-    "cw-fed"
+    "stylelint"
   ],
   "author": "weishijiestein@outlook.com",
   "license": "MIT"
